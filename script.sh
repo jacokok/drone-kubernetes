@@ -13,7 +13,7 @@ if [ ! -z ${PLUGIN_KUBERNETES_CONFIG} ]; then
 fi
 
 mkdir $HOME/.kube
-#echo "$KUBERNETES_CONFIG" > $HOME/.kube/config
+echo "$KUBERNETES_CONFIG" > $HOME/.kube/config
 
 #kubectl -n default set image deployment/test-make-api test-make-api=cloud.canister.io:5000/doink/test-make-api:latest
 
